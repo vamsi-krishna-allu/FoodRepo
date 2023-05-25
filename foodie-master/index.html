@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie - Supper delicious Burger in town!</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://www.dafontfree.net/embed/eWVhcmJvb2stc29saWQtcmVndWxhciZkYXRhLzQ3L3kvNTY1MTkvWWVhcmJvb2sgU29saWQudHRm"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <h1
+          class="logo-header"
+          style="display: flex; flex-direction: column; align-items: center"
+        >
+          <a
+            href="#"
+            class="logo"
+            style="
+              font-family: 'Yearbook Solid', sans-serif;
+              margin-bottom: -11.26px;
+            "
+            >NAMASTHEY</a
+          >
+          <span class="span">INDIAN CORNER</span>
+        </h1>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#food-menu" class="navbar-link" data-nav-link
+                >Menu Items</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a href="#specials" class="navbar-link" data-nav-link>Specials</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contact" class="navbar-link" data-nav-link
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-btn-group">
+          <button class="btn btn-hover">Want to Reserve</button>
+
+          <button
+            class="nav-toggle-btn"
+            aria-label="Toggle Menu"
+            data-menu-toggle-btn
+          >
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-section">
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-content">
+              <h2
+                style="
+                  font-family: 'Yearbook Solid', sans-serif;
+                  margin-bottom: -50px;
+                "
+                class="h1 hero-title"
+              >
+                NAMASTHEY
+              </h2>
+
+              <p class="hero-text">INDIAN CORNER</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section section-divider gray about" id="about">
+          <div class="container">
+            <div class="about-banner">
+              <img
+                src="./assets/images/restaurant.jpg"
+                width="509"
+                height="459"
+                loading="lazy"
+                alt="Burger with Drinks"
+                class="w-100 about-img"
+              />
+            </div>
+
+            <div class="about-content">
+              <h2 class="h2 section-title">
+                Best Indian restaurant
+                <span class="span">in Town!</span>
+              </h2>
+
+              <p class="section-text">
+                The restaurants in Hangzhou also catered to many northern
+                Chinese who had fled south from Kaifeng during the Jurchen
+                invasion of the 1120s, while it is also known that many
+                restaurants were run by families.
+              </p>
+
+              <ul class="about-list">
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span">Delicious & Healthy Foods</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span">Spacific Family And Kids Zone</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span">Music & Other Facilities</span>
+                </li>
+
+                <li class="about-item">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+
+                  <span class="span">Fastest Food Home Delivery</span>
+                </li>
+              </ul>
+
+              <button class="btn btn-hover">
+                Order Now
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FOOD MENU
+      -->
+
+        <section class="section food-menu" id="food-menu">
+          <div class="container">
+            <p class="section-subtitle">Popular Dishes</p>
+
+            <h2 class="h2 section-title">
+              Our Delicious <span class="span">Foods</span>
+            </h2>
+
+            <ul class="fiter-list">
+              <li>
+                <button
+                  id="allTimefavorites"
+                  class="filter-btn active"
+                  onclick="setButtonActive('allTimefavorites')"
+                >
+                  All Time Favorites
+                </button>
+              </li>
+
+              <li>
+                <button
+                  id="breakfastAndSnacks"
+                  class="filter-btn"
+                  onclick="setButtonActive('breakfastAndSnacks')"
+                >
+                  Breakfast and Snacks
+                </button>
+              </li>
+
+              <li>
+                <button
+                  id="lunchAndDinner"
+                  class="filter-btn active"
+                  onclick="setButtonActive('lunchAndDinner')"
+                >
+                  Lunch and Dinner
+                </button>
+              </li>
+
+              <li>
+                <button
+                  id="riceRoti"
+                  class="filter-btn"
+                  onclick="setButtonActive('riceRoti')"
+                >
+                  4 PM to 8 PM Specials
+                </button>
+              </li>
+
+              <li>
+                <button
+                  id="coldAndSweet"
+                  class="filter-btn"
+                  onclick="setButtonActive('coldAndSweet')"
+                >
+                  Hot Cold and Sweet
+                </button>
+              </li>
+            </ul>
+
+            <div id="allTimeFavoritesList">
+              <ul class="food-menu-list">
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Bun Maska (Butter / Jam)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$4.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Bun Maska (Omlette)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Omlette (Half Boil/Full)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Fish Tawa / Tandoor</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$13.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Egg Burji + Pav/Wrap</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$8.99/10.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Keema + Pav/Wrap</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$10.99/12.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Paneer Burji + Pav /Wrap</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$8.99/10.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Lollipop / Wings</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$13.50</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Swirl Fries Poutine</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$10.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chaat (Aloo/Dahi/Bhel)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">
+                        Samosa (4 Pcs) / Puff (2 Pcs)
+                      </div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Spring Rolls</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="breakfastAndSnacksList" style="display: none">
+              <ul class="food-menu-list">
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Plain Dosa</div>
+                      <p class="category">
+                        Crispy and golden South Indian pancake made from fermented rice and lentil batter.
+                      </p>
+                      <p class="price-amount">$5.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">
+                        Onion Dosa
+                      </div>
+                      <p class="category">
+                        A crispy South Indian pancake made with a fermented batter of rice and lentils, mixed with chopped onions and spices
+                      </p>
+                      <p class="price-amount">$6.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Potato Masala Dosa</div>
+                      <p class="category">
+                        A savory Indian crepe made from fermented rice and lentil batter, filled with a spiced potato and onion mixture
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chocolate Dosa</div>
+                      <p class="category">
+                        A dessert version of the traditional dosa, made by filling the crepe-like pancake with a rich and decadent chocolate filling
+                      </p>
+                      <p class="price-amount">$6.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Noodle Dosa</div>
+                      <p class="category">
+                        A fusion dish that combines the texture of Chinese noodles with the crispy texture of dosa
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Egg Dosa</div>
+                      <p class="category">
+                        A plain dosa filled with a layer of beaten egg and cooked until crispy.
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Set Dosa</div>
+                      <p class="category">
+                        Small and fluffy South Indian pancake made from a fermented batter of rice, urad dal, and flattened rice
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Rawa Dosa</div>
+                      <p class="category">
+                        Popular South Indian crepe made with a batter of semolina, rice flour, and all-purpose flour, and is typically thin and crispy with a slightly tangy and savory taste.
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Green Moong Dosa (Pesarattu)</div>
+                      <p class="category">
+                        Pesarattu is a type of savory crepe made from green gram (moong dal) batter
+                      </p>
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Bonda (Punugulu)</div>
+                      <p class="category">
+                        Snack made from a fermented batter of rice and lentils, deep-fried and served with chutney
+                      </p>
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Aloo Paratha</div>
+                      <p class="category">
+                        A popular Indian flatbread stuffed with spiced mashed potatoes. </p>
+                      <p class="price-amount">$6.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Gobi Paratha</div>
+                      <p class="category">
+                        A popular Indian flatbread stuffed with spiced cauliflower.</p>
+                      <p class="price-amount">$6.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Paneer Paratha</div>
+                      <p class="category">
+                        A delicious flatbread stuffed with spiced cottage cheese (paneer) filling
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Paratha</div>
+                      <p class="category">
+                        A savory stuffed flatbread originating from the subcontinent, filled with spiced shredded chicken</p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Idly (3 Pcs)
+                        (Ghee/Podi/Sambar)
+                      </div>
+                      <p class="category">
+                        A traditional breakfast dish made from a fermented batter of rice and black lentils, steamed to create soft and fluffy cakes. </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Puri (3 Pcs)</div>
+                      <p class="category">
+                        A popular fried bread made from wheat flour dough and served with various accompaniments.</p>
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Upma</div>
+                      <p class="category">
+                        A traditional breakfast dish made from semolina, seasoned with spices and vegetables.
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Poha</div>
+                      <p class="category">
+                        A popular breakfast dish made with flattened rice, onions, peas, and spices. <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Sabudhana Khichidi</div>
+                      <p class="category">
+                        A flavorful dish made with tapioca pearls, peanuts, potatoes, and spices. </p>
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Dokhla</div>
+                      <p class="category">
+                        A savory steamed cake made from fermented batter of gram flour and flavored with spices and herbs, originating from the Indian state of Gujarat. </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Dabeli</div>
+                      <p class="category">
+                        A popular Indian street food originating from Gujarat, consisting of a spicy potato filling sandwiched between a sweet bun, topped with chutneys, pomegranate seeds, and roasted peanuts. </p>
+                      <p class="price-amount">$5.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Misal Pav (Sunday and Wednesday)</div>
+                      <p class="category">
+                        A spicy Maharashtrian dish made with sprouted moth beans, served with bread (pav) and topped with various condiments.
+                      <p class="price-amount">$10.99</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="lunchAndDinnerList" style="display: none">
+              <ul class="food-menu-list">
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Mini Veg Thali</div>
+                      <p class="category">
+                        A mini veg thali typically consists of a small serving of rice, dal, one or two vegetable curries, and a flatbread or roti.
+                      </p>
+                      <p class="price-amount">$10.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">
+                        Full Veg Thali
+                      </div>
+                      <p class="category">
+                        A full veg thali is a traditional meal consisting of a variety of dishes served on a large plate, typically including rice, dal, vegetables, roti, papadum, chutney, and a sweet dessert.
+                      </p>
+                      <p class="price-amount">$15.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Mini Chicken Thali</div>
+                      <p class="category">
+                        A traditional meal featuring a small serving of chicken curry, rice, dal, and a side dish, typically served on a metal platter.
+                      </p>
+                      <p class="price-amount">$10.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Full Chicken Thali</div>
+                      <p class="category">
+                        A full chicken thali is a complete meal that typically includes a chicken curry, rice, naan bread, lentils, vegetables, yogurt, and a dessert, all served on a single platter.
+                     </p>
+                      <p class="price-amount">$15.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Full Fish Thali</div>
+                      <p class="category">
+                        A traditional meal featuring a variety of fish dishes served on a platter with rice, bread, vegetable sides, and condiments.
+                      </p>
+                      <p class="price-amount">$22.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Dum Biryani (Half/Full)</div>
+                      <p class="category">
+                        A savory Indian rice dish with layers of spiced chicken and fragrant basmati rice, cooked to perfection.
+                      </p>
+                      <p class="price-amount">$9.99/$15.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Fry Piece Biryani</div>
+                      <p class="category">
+                        A delicious and aromatic rice dish made with fried chicken pieces, herbs, and spices, layered with basmati rice and served with flavorful accompaniments.
+                      </p>
+                      <p class="price-amount">$15.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Vegetable Dum Biryani</div>
+                      <p class="category">
+                        A savory and aromatic Indian rice dish cooked with mixed vegetables and flavored with biryani spices, herbs, and fried onions.
+                      </p>
+                      <p class="price-amount">$15.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Dal Tadka</div>
+                      <p class="category">
+                        Dal Tadka is a popular Indian dish made from lentils and tempered with spices and herbs, typically served with rice or bread.
+                      </p>
+                      <p class="price-amount">$10.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Kaju Curry</div>
+                      <p class="category">
+                        Kaju Curry is a vegetarian Indian dish made with cashew nuts cooked in a creamy and aromatic sauce of tomato, onion, and spices.
+                       </p>
+                      <p class="price-amount">$13.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Paneer Butter Masala</div>
+                      <p class="category">
+                        Paneer Butter Masala is a popular Indian dish made with cubes of paneer (Indian cottage cheese) cooked in a creamy tomato-based sauce with a blend of spices and butter. </p>
+                      <p class="price-amount">$13.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Ankapur Chicken Curry</div>
+                      <p class="category">
+                        Ankapur Chicken Curry is a spicy and flavorful Indian curry made with chicken, tomatoes, onions, and a blend of aromatic spices.</p>
+                      <p class="price-amount">$13.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Tikka Masala</div>
+                      <p class="category">
+                        Chicken Tikka Masala is a popular Indian dish consisting of marinated chicken pieces cooked in a creamy tomato-based sauce with aromatic spices.
+                      </p>
+                      <p class="price-amount">$13.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Andhra Vankaya Masala (Brinjal)</div>
+                      <p class="category">
+                        Andhra Vankaya Masala is a spicy and flavorful eggplant curry popular in the Andhra Pradesh region of India.
+                      <p class="price-amount">$13.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Cheppala Pulusu
+                      </div>
+                      <p class="category">
+                        Cheppala Pulusu is a traditional South Indian fish curry made with tamarind, spices, and fish, typically served with steamed rice.
+                      <p class="price-amount">$18.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Steamed Basmati Rice</div>
+                      <p class="category">
+                        Steamed Basmati Rice is a long-grain aromatic rice variety that is cooked by steaming and is popular in many cuisines.
+                      <p class="price-amount">$3.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Jeera Rice</div>
+                      <p class="category">
+                        Jeera rice is an Indian dish made by cooking basmati rice with cumin seeds and other spices.
+                      </p>
+                      <p class="price-amount">$4.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Pulihora (Lemon/Tamarind) Rice</div>
+                      <p class="category">
+                        Pulihora is a popular South Indian dish made with cooked rice and flavored with tangy lemon or tamarind. 
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Dal Rice</div>
+                      <p class="category">
+                        Dal rice is a popular South Asian dish made with lentils and rice, typically seasoned with spices and herbs.
+                      </p>
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Curd Rice</div>
+                      <p class="category">
+                        Curd Rice is a traditional Indian dish made by mixing cooked rice with yogurt and seasoned with spices.
+                      <p class="price-amount">$9.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chapati</div>
+                      <p class="category">
+                        Chapati is a type of unleavened flatbread that is commonly consumed in South Asian and East African cuisine.
+                      <p class="price-amount">$1.49</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Tawa Parotta</div>
+                      <p class="category">
+                        Tawa Parotta is a popular Indian flatbread that is made by griddling layered dough on a hot griddle with oil or ghee.
+                      <p class="price-amount">$2.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Thali Peeth</div>
+                      <p class="category">
+                        Thali peeth is a savory pancake-like dish from Western India made with a blend of flours, spices, and vegetables.
+                      <p class="price-amount">$2.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Butter Naan</div>
+                      <p class="category">
+                        Butter naan is a type of Indian flatbread made with flour, yeast, and ghee or butter, often served alongside spicy curries or other dishes.
+                      <p class="price-amount">$3.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Garlic Naan</div>
+                      <p class="category">
+                        Garlic Naan is a type of Indian bread that is typically made with a combination of garlic, flour, yeast, and yogurt, and is traditionally cooked in a tandoor oven.
+                      <p class="price-amount">$4.99</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="riceRotiList" style="display: none">
+              <ul class="food-menu-list">
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Regular French Fries</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$4.99</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Fish and Chips</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Curly Fries</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$5.99</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Curly Fries Poutine</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chicken Wings (Chef's Special Sauce)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$8.99</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Chittu Punugulu (Bonda)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Onion Pakora/ Bajji</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Tomato Pakora/ Bajji</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">
+                        Paneer Pakora/ Bajji
+                      </div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">
+                        Mirchi Bajji
+                      </div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">
+                        Egg Pakora/ Bajji
+                      </div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Special Pakora/ Bajji</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$7.99</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div id="coldAndSweetList" style="display: none">
+              <ul class="food-menu-list">
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Masal Chai (Tea)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$1.49/3.49</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Filter Coffee ( Coffee)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$1.49/3.49</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Lassi (Mango / Chocolate)</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$3.49</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Shahi Tukda</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$4.99</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="food-menu-card">
+                    <div class="card-banner">
+                      <div class="h3 card-title">Cup Cake</div>
+                      <p class="category">
+                        This is a description of the item on the menu. List
+                        ingredients here
+                      </p>
+                      <p class="price-amount">$4.99</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+        <!-- 
+        - #SPECIALS
+      -->
+
+        <section class="section section-divider white blog" id="specials">
+          <div class="container">
+            <h2 class="h2 section-title">
+              Our Special <span class="span">Foods</span>
+            </h2>
+
+            <p class="section-text">
+              Every restaurant has their own specials and our speciality lies
+              here.
+            </p>
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/chickenThali.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Always Biryani"
+                      class="w-100"
+                    />
+
+                    <div class="badge">CHICKEN THALI</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >A delicious chicken thali - a complete meal featuring spiced chicken curry, rice, dal, vegetables, and chapati.</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/FishThali.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Innovative Hot Chessyraw Pasta Make Creator Fact."
+                      class="w-100"
+                    />
+
+                    <div class="badge">FISH THALI</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >A flavorful assortment of fish dishes served on a platter, commonly known as fish thali.</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/ChickenBiryani.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="How about starting a day with hot chai?"
+                      class="w-100"
+                    />
+
+                    <div class="badge">CHICKEN BIRYANI</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Spiced rice layered with tender chicken pieces, cooked to perfection - Chicken Biryani, a flavor-packed delight!</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/Dosa.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Always Biryani"
+                      class="w-100"
+                    />
+
+                    <div class="badge">DOSA</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >A crispy, savory Indian pancake typically made from a fermented batter of rice and lentils.</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/TeanAndBunMaska.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Innovative Hot Chessyraw Pasta Make Creator Fact."
+                      class="w-100"
+                    />
+
+                    <div class="badge">TEAN AND BUN MASKA</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >A perfect pairing of hot beverage and buttered bread for a delightful snack.</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/FishFry.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="How about starting a day with hot chai?"
+                      class="w-100"
+                    />
+
+                    <div class="badge">FISH FRY</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Crispy, golden-brown fish fillets, hot out of the fryer, perfect for a quick and delicious meal.</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/Punugulu.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Always Biryani"
+                      class="w-100"
+                    />
+
+                    <div class="badge">PUNUGULU</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Crispy and fluffy Indian snack made with fermented batter of rice and lentils, typically served with coconut chutney.</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <div class="card-banner">
+                    <img
+                      src="./assets/images/ChickenLegFry.png"
+                      width="600"
+                      height="390"
+                      loading="lazy"
+                      alt="Innovative Hot Chessyraw Pasta Make Creator Fact."
+                      class="w-100"
+                    />
+
+                    <div class="badge">CHICKEN LEG FRY</div>
+                  </div>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >Crispy and succulent chicken leg fry - the perfect indulgence for meat lovers!</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="contact">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="" class="logo">Namasthey<span class="span">.</span></a>
+
+            <p class="footer-text">
+              Financial experts support or help you to to find out which way you
+              can raise your funds more.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">+1 (705) 673-7272</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">info@namasthey.com</p>
+            </li>
+
+            <li>
+              <address class="footer-list-item">
+                499 Notre Dame Ave, Greater Sudbury, ON P3C 5L1
+              </address>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Opening Hours</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">Monday to Sunday 10 AM to 10 PM</p>
+            </li>
+          </ul>
+
+          <form class="footer-form">
+            <p class="footer-list-title">Book a Table</p>
+
+            <div class="input-wrapper">
+              <input
+                id="full_name"
+                type="text"
+                name="full_name"
+                required
+                placeholder="Your Name"
+                aria-label="Your Name"
+                class="input-field"
+              />
+
+              <input
+                id="phone_number"
+                type="number"
+                name="phone_number"
+                required
+                placeholder="phone number"
+                aria-label="Phone Number"
+                class="input-field"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <select
+                id="total_person"
+                name="total_person"
+                aria-label="Total person"
+                class="input-field"
+              >
+                <option value="person">Person</option>
+                <option value="2 person">2 Person</option>
+                <option value="3 person">3 Person</option>
+                <option value="4 person">4 Person</option>
+                <option value="5 person">5 Person</option>
+              </select>
+
+              <input
+                id="booking_date"
+                type="date"
+                name="booking_date"
+                aria-label="Reservation date"
+                class="input-field"
+              />
+            </div>
+
+            <textarea
+              id="message"
+              name="message"
+              required
+              placeholder="Message"
+              aria-label="Message"
+              class="input-field"
+            ></textarea>
+
+            <button type="submit" onclick="sendMessage()" class="btn">Book a Table</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright-text">
+            &copy; 2023 <a href="#" class="copyright-link">Namasthey</a> All
+            Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="Back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendMessage() {
+        const name = document.getElementById("full_name");
+        const phoneNumber = document.getElementById("phone_number");
+        const date = document.getElementById("booking_date");
+        const personCount = document.getElementById("total_person");
+        const message = document.getElementById("message");
+
+        Email.send({
+          SecureToken: "4f38ef08-ab9b-41d7-8190-b63b9af89a10",
+          To: "vamsi010@outlook.com",
+          From: "vkallu108@gmail.com",
+          Subject: "New Booking",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
+  </body>
+</html>
