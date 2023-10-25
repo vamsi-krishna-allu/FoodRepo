@@ -550,7 +550,7 @@ body.active { overflow: hidden; }
 
 .hero-title {
   color: var(--black);
-  font-size: 150px;
+  font-size: 40px;
   max-width: 12ch;
   margin-inline: auto;
 }
@@ -558,7 +558,7 @@ body.active { overflow: hidden; }
 .hero-text {
   margin-block: 15px 30px;
   max-width: 44ch;
-  font-size: 65px;
+  font-size: 20px;
   margin-inline: auto;
   color: var(--sonic-silver);
 }
@@ -1434,6 +1434,7 @@ textarea.input-field {
 
 
 
+
   /**
    * ABOUT
    */
@@ -1564,6 +1565,21 @@ textarea.input-field {
 
     --section-padding: 120px;
 
+  }
+
+  .hero-title {
+    color: var(--black);
+    font-size: 150px;
+    max-width: 12ch;
+    margin-inline: auto;
+  }
+  
+  .hero-text {
+    margin-block: 15px 30px;
+    max-width: 44ch;
+    font-size: 65px;
+    margin-inline: auto;
+    color: var(--sonic-silver);
   }
 
 
@@ -1746,7 +1762,20 @@ textarea.input-field {
 
   .hero { min-height: 770px; }
 
-
+  .hero-title {
+    color: var(--black);
+    font-size: 150px;
+    max-width: 12ch;
+    margin-inline: auto;
+  }
+  
+  .hero-text {
+    margin-block: 15px 30px;
+    max-width: 44ch;
+    font-size: 65px;
+    margin-inline: auto;
+    color: var(--sonic-silver);
+  }
 
   /**
    * PROMO

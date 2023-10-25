@@ -32,26 +32,233 @@ function setButtonActive(id) {
   var activeButton = document.getElementById(id);
   activeButton.classList.add("active");
 
-  if (id === "allTimefavorites") {
-    document.getElementById("breakfastAndSnacksList").style.display = "none";
-    document.getElementById("riceRotiList").style.display = "none";
-    document.getElementById("coldAndSweetList").style.display = "none";
-    document.getElementById("allTimeFavoritesList").style.display = "block";
-  } else if (id === "breakfastAndSnacks") {
-    document.getElementById("allTimeFavoritesList").style.display = "none";
-    document.getElementById("riceRotiList").style.display = "none";
-    document.getElementById("coldAndSweetList").style.display = "none";
-    document.getElementById("breakfastAndSnacksList").style.display = "block";
-  } else if (id === "riceRoti") {
-    document.getElementById("allTimeFavoritesList").style.display = "none";
-    document.getElementById("breakfastAndSnacksList").style.display = "none";
-    document.getElementById("coldAndSweetList").style.display = "none";
-    document.getElementById("riceRotiList").style.display = "block";
-  } else {
-    document.getElementById("allTimeFavoritesList").style.display = "none";
-    document.getElementById("breakfastAndSnacksList").style.display = "none";
-    document.getElementById("riceRotiList").style.display = "none";
-    document.getElementById("coldAndSweetList").style.display = "block";
+  switch (id) {
+    case "allTimefavorites":
+      document.getElementById("allTimeFavoritesList").style.display = "block";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "bunAndBreads":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "block";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "dosa":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "block";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "indianBreakfast":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "block";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "friesAndFritters":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "block";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "burjiParatha":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "block";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "indianChinese":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "block";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "chaat":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "block";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "pakora":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "block";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "lunchAndDinner":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "block";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "block";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "riceBiryani": 
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "block";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "indianBreads":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "block";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "driksAndBeverages":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "block";
+      document.getElementById("sweetsAndCakesList").style.display = "none";
+      break;
+    case "sweetsAndCakes":
+      document.getElementById("allTimeFavoritesList").style.display = "none";
+      document.getElementById("bunAndBreadsList").style.display = "none";
+      document.getElementById("dosaList").style.display = "none";
+      document.getElementById("indianBreakfastList").style.display = "none";
+      document.getElementById("friesAndFrittersList").style.display = "none";
+      document.getElementById("burjiParathaList").style.display = "none";
+      document.getElementById("indianChineseList").style.display = "none";
+      document.getElementById("chatList").style.display = "none";
+      document.getElementById("pakoraList").style.display = "none";
+      document.getElementById("lunchAndDinnerList").style.display = "none";
+      document.getElementById("riceBiryaniList").style.display = "none";
+      document.getElementById("indianBreadsList").style.display = "none";
+      document.getElementById("driksAndBeveragesList").style.display = "none";
+      document.getElementById("sweetsAndCakesList").style.display = "block";
+      break;
+    default:
+      break;
   }
 }
 /**
